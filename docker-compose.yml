@@ -113,27 +113,12 @@ services:
       - redis
 
   #---------------------------------------------------------------#
-  # Orthanc Database
-  database:
-    image: postgres:alpine
-    container_name: pacsdb
-    volumes:
-      - ./orthanc/database:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_PASSWORD=CnCuL2nS4yiUDm427L
-      - POSTGRES_USER=orthanc
-      - POSTGRES_DB=orthanc
-    restart: always
-    networks:
-      - proxy
-
-  #---------------------------------------------------------------#
   # Orthanc Pacs
   pacs:
     image: jodogne/orthanc-plugins
     container_name: orthanc
     ports:
-      # - 8042:8042 #only expose locally if need to access orthanc
+      - 8042:8042 #only expose locally if need to access orthanc
       - 4242:4242 #dicom Port
     volumes:
       - ./orthanc/config:/etc/orthanc/:ro
