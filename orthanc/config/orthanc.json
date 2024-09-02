@@ -32,7 +32,7 @@
   "SslTrustedClientCertificates": "trustedClientCertificates.pem",
   "AuthenticationEnabled": false,
   "RegisteredUsers": {
-    "enterlab": "enterlab"
+    "hyper": "enterlab"
   },
   "DicomTlsEnabled": false,
   "DicomTlsRemoteCertificateRequired": true,
