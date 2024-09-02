@@ -1,6 +1,6 @@
 {
-  "Name": "M A P D R",
-  "StorageDirectory": "/var/lib/orthanc/db",
+  "Name": "ENTERLAB DICOM",
+  "StorageDirectory": "/mnt/DICOM-STORAGE/Orthanc",
   "StorageCompression": true,
   "MaximumStorageSize": 0,
   "MaximumPatientCount": 0,
@@ -17,7 +17,7 @@
   "WebDavDeleteAllowed": false,
   "WebDavUploadAllowed": true,
   "DicomServerEnabled": true,
-  "DicomAet": "MAPDR",
+  "DicomAet": "mediweb",
   "DicomCheckCalledAet": true,
   "DicomPort": 4242,
   "DefaultEncoding": "Latin1",
@@ -32,7 +32,7 @@
   "SslTrustedClientCertificates": "trustedClientCertificates.pem",
   "AuthenticationEnabled": false,
   "RegisteredUsers": {
-    "mapdr": "mapdr"
+    "enterlab": "enterlab"
   },
   "DicomTlsEnabled": false,
   "DicomTlsRemoteCertificateRequired": true,
