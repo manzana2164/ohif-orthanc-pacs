@@ -1,6 +1,3 @@
-# M A P D R (Hyper4Saken) 🤘
-
-![MAPDR](https://github.com/hyper4saken/ohif-orthanc-pacs/blob/main/ohif/config/logo.png)
 
 # OHIF v3 with Orthanc(PostgresDB) with Authentik for Auth and Nginx Proxy Manager for Proxy
 
@@ -16,8 +13,7 @@
 > **🌐 Nginx Proxy Manager:** It is a simple yet powerful web-based tool for managing Nginx proxy servers, enabling easy configuration and management of reverse proxies and SSL/TLS termination.
 
 ---
-## 🤔 Want to know how it looks like. Here is the Demo Video
-[![DEMO VIDEO](https://img.youtube.com/vi/2Sde7z1E_y8/0.jpg)](https://www.youtube.com/watch?v=2Sde7z1E_y8)
+
 
 ### Create new docker network `proxy`
 
@@ -28,7 +24,7 @@ docker network create proxy
 ### Clone This Repo
 
 ```bash
-git clone https://github.com/hyper4saken/ohif-orthanc.git
+git clone https://github.com/manzana2164/ohif-orthanc-pacs.git
 cd ohif-orthanc-pacs
 ```
 
@@ -79,13 +75,13 @@ nvim ./orthanc/config/orthanc.json
 ```json
    "AuthenticationEnabled": true,
   "RegisteredUsers": {
-    "hyper": "mapdr"
+    "hyper": "enterlab"
   },
 ```
 
 ### Create generate the base64-encoded string
 ```bash
-echo -n 'hyper:mapdr' | base64.
+echo -n 'hyper:enterlab' | base64.
 aHlwZXI6bWFwZHI=
 ```
 
